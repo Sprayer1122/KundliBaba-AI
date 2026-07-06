@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KundliBaba AI — Aapki Janm Kundli, 2 Minute Mein, Sirf ₹19 | WhatsApp Pe</title>
+<meta name="description" content="WhatsApp pe apni Vedic janm kundli banwao sirf ₹19 mein. Asli graha-ganit + AI ki saaf Hinglish samjhaish + aapke 5 sawaalon ke jawab. UPI payment, turant refund.">
+<meta property="og:title" content="KundliBaba AI — Kundli 2 minute mein, sirf ₹19">
+<meta property="og:description" content="WhatsApp pe 'Hi' bhejo. Janm details do. ₹19 UPI. Puri kundli report + 5 sawaal. Bina daraye, seedhi baat.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kundlibaba.in">
+<meta name="theme-color" content="#160F33">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23160F33'/%3E%3Cpath d='M50 15 L85 50 L50 85 L15 50 Z' fill='none' stroke='%23F2C14E' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='7' fill='%23FF6D3B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ================= KundliBaba AI — v2 tokens ================= */
+:root{
+  --raat:#160F33;--raat-2:#221650;--raat-3:#2C1D66;
+  --gold:#F2C14E;--gold-deep:#C98A2B;--sindoor:#FF6D3B;
+  --chaand:#F7F1E3;--chaand-dim:#BEB4D6;
+  --wa:#25D366;--wa-deep:#1FAF54;
+  --maxw:1080px;--radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--raat);color:var(--chaand);font-family:'Mukta',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:17px;line-height:1.65;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;
+  background:radial-gradient(900px 500px at 85% -10%, rgba(242,193,78,.10), transparent 60%),
+             radial-gradient(700px 420px at -10% 25%, rgba(255,109,59,.07), transparent 60%);}
+::selection{background:var(--gold);color:var(--raat)}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+#stars{position:fixed;inset:0;z-index:0;pointer-events:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px;position:relative;z-index:2}
+.section{padding:76px 0;position:relative;z-index:2}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold-deep)}
+h1,h2{font-family:'Rozha One',Georgia,serif;font-weight:400;line-height:1.14;letter-spacing:.005em}
+h2{font-size:clamp(28px,4.6vw,42px);margin:14px 0 14px}
+.lead{color:var(--chaand-dim);max-width:56ch}
+.gold-shimmer{background:linear-gradient(100deg,var(--gold-deep) 20%,#FFE9A8 40%,var(--gold) 60%,var(--gold-deep) 80%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 4.2s linear infinite}
+@keyframes shimmer{to{background-position:-220% 0}}
+.divider{display:flex;justify-content:center;align-items:center;gap:14px;color:var(--gold-deep);opacity:.65;font-size:14px}
+.divider::before,.divider::after{content:"";height:1px;width:min(140px,24vw);background:linear-gradient(90deg,transparent,var(--gold-deep));}
+.divider::after{background:linear-gradient(90deg,var(--gold-deep),transparent)}
+
+/* progress bar */
+#progress{position:fixed;top:0;left:0;height:3px;width:100%;background:linear-gradient(90deg,var(--gold),var(--sindoor));transform-origin:0 50%;transform:scaleX(0);z-index:70}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Mukta',sans-serif;font-weight:700;font-size:17px;padding:15px 26px;border-radius:999px;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s ease;cursor:pointer;border:0;position:relative;overflow:hidden}
+.btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.btn-wa{background:var(--wa);color:#07220F;box-shadow:0 10px 28px rgba(37,211,102,.28)}
+.btn-wa::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);transition:left .55s ease}
+.btn-wa:hover::after{left:130%}
+.btn-wa:hover{transform:translateY(-2px);background:#2BE271;box-shadow:0 14px 34px rgba(37,211,102,.36)}
+.btn-wa svg{width:21px;height:21px;flex:none}
+.btn-ghost{background:transparent;color:var(--gold);border:1.5px solid var(--gold-deep);font-size:15px;padding:10px 20px}
+.btn-ghost:hover{background:rgba(242,193,78,.08)}
+.btn-note{font-size:13.5px;color:var(--chaand-dim);margin-top:12px}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:50;background:rgba(22,15,51,.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(242,193,78,.12)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:'Rozha One',serif;font-size:21px;color:var(--chaand)}
+.logo b{color:var(--gold);font-weight:400}
+.logo-mark{width:32px;height:32px;flex:none}
+
+/* ---------- hero ---------- */
+.hero{padding:66px 0 60px;position:relative;z-index:2}
+.hero-grid{display:grid;grid-template-columns:1.12fr .98fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(38px,6vw,62px);margin:18px 0 16px}
+.hero h1 .hindi{color:var(--sindoor)}
+.hero h1 .line{display:block;opacity:0;transform:translateY(26px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+.hero h1 .line:nth-child(2){animation-delay:.14s}
+.hero h1 .line:nth-child(3){animation-delay:.28s}
+.hero .lead,.hero .cta-block{opacity:0;transform:translateY(22px);animation:rise .8s .42s cubic-bezier(.2,.7,.2,1) forwards}
+.hero .cta-block{animation-delay:.56s}
+@keyframes rise{to{opacity:1;transform:none}}
+.hero .lead{font-size:clamp(17px,2vw,19px);margin-bottom:30px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--chaand-dim);border:1px solid var(--raat-3);border-radius:999px;padding:7px 14px;background:rgba(34,22,80,.5)}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--gold);flex:none}
+
+/* ---------- kundli + mandala (signature) ---------- */
+.chart-holder{position:relative;padding:10px;perspective:1100px}
+.mandala{position:absolute;inset:-9%;z-index:0;opacity:.5;animation:spin 90s linear infinite;pointer-events:none}
+.mandala text{font-family:'Mukta',sans-serif;font-size:15px;letter-spacing:.22em;fill:var(--gold-deep)}
+.mandala .ticks{fill:none;stroke:rgba(242,193,78,.5);stroke-width:6;stroke-dasharray:.14 .86}
+@keyframes spin{to{transform:rotate(360deg)}}
+.chart-frame{position:relative;z-index:1;background:linear-gradient(160deg,var(--raat-2),#1B1240 70%);border:1px solid rgba(242,193,78,.22);border-radius:26px;padding:26px 26px 20px;box-shadow:0 30px 70px rgba(0,0,0,.5),inset 0 1px 0 rgba(247,241,227,.06);transition:transform .18s ease;will-change:transform}
+.corner{position:absolute;font-family:'Rozha One',serif;color:var(--gold);opacity:.7;font-size:15px}
+.corner.c1{top:9px;left:13px}.corner.c2{top:9px;right:13px}.corner.c3{bottom:9px;left:13px}.corner.c4{bottom:9px;right:13px}
+.chart-frame figcaption{text-align:center;font-size:13.5px;color:var(--chaand-dim);margin-top:14px;letter-spacing:.02em}
+#kundli{width:100%;height:auto;filter:drop-shadow(0 0 14px rgba(242,193,78,.22))}
+#kundli .line{fill:none;stroke:var(--gold);stroke-width:2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+#kundli .graha{font-family:'Rozha One',serif;font-size:19px;fill:var(--chaand);opacity:0;transition:opacity .8s ease}
+#kundli .graha.accent{fill:var(--sindoor)}
+#kundli .housenum{font-family:'Mukta',sans-serif;font-size:10px;fill:rgba(190,180,214,.55);opacity:0;transition:opacity 1s ease .2s}
+#kundli .orbiter{filter:drop-shadow(0 0 6px rgba(255,109,59,.8))}
+#kundli .orbiter2{filter:drop-shadow(0 0 5px rgba(242,193,78,.8))}
+.drawn #kundli .line{animation:draw 1.6s ease forwards}
+.drawn #kundli .line:nth-of-type(2){animation-delay:.25s}
+.drawn #kundli .line:nth-of-type(3){animation-delay:.5s}
+.drawn #kundli .line:nth-of-type(4){animation-delay:.75s}
+.drawn #kundli .graha,.drawn #kundli .housenum{opacity:1}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+/* ---------- aaj ka din ---------- */
+.aaj{border-top:1px solid rgba(242,193,78,.14);border-bottom:1px solid rgba(242,193,78,.14);background:linear-gradient(90deg,rgba(255,109,59,.08),rgba(34,22,80,.45) 40%);position:relative;z-index:2}
+.aaj-in{display:flex;flex-wrap:wrap;align-items:center;gap:10px 26px;padding:16px 0;font-size:15px}
+.aaj .diya{font-size:19px}
+.aaj b{color:var(--gold)}
+.aaj .dev{font-family:'Rozha One',serif;color:var(--sindoor);font-size:17px}
+.aaj small{color:var(--chaand-dim)}
+
+/* ---------- ticker ---------- */
+.ticker{border-bottom:1px solid rgba(242,193,78,.14);overflow:hidden;padding:14px 0;background:rgba(34,22,80,.35);position:relative;z-index:2}
+.ticker-track{display:flex;gap:44px;white-space:nowrap;width:max-content;animation:tick 42s linear infinite}
+.ticker span{font-size:15px;color:var(--chaand-dim);letter-spacing:.04em}
+.ticker b{color:var(--gold);font-weight:600;font-family:'Rozha One',serif;margin-right:8px;font-size:16px}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ---------- honest stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
+.stat{text-align:center;padding:26px 10px;border:1px solid rgba(242,193,78,.14);border-radius:var(--radius);background:rgba(34,22,80,.4)}
+.stat .num{font-family:'Rozha One',serif;font-size:clamp(34px,5vw,50px);color:var(--gold);line-height:1}
+.stat .lbl{font-size:14px;color:var(--chaand-dim);margin-top:8px;letter-spacing:.04em}
+.stat.you .num{color:var(--sindoor)}
+
+/* ---------- steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:38px;counter-reset:step;position:relative}
+.steps::before{content:"";position:absolute;top:52px;left:6%;right:6%;border-top:1.5px dashed rgba(242,193,78,.3)}
+.step{background:var(--raat-2);border:1px solid rgba(242,193,78,.14);border-radius:var(--radius);padding:24px 20px;position:relative;transition:transform .2s ease,border-color .2s ease}
+.step:hover{transform:translateY(-5px);border-color:rgba(242,193,78,.4)}
+.step::before{counter-increment:step;content:counter(step);font-family:'Rozha One',serif;font-size:34px;color:var(--gold);display:block;margin-bottom:8px}
+.step h3{font-size:19px;margin-bottom:6px;font-weight:700}
+.step p{font-size:15px;color:var(--chaand-dim)}
+.step .tag{position:absolute;top:22px;right:18px;font-size:11.5px;font-weight:700;letter-spacing:.08em;color:var(--sindoor);text-transform:uppercase}
+
+/* ---------- rashi picker ---------- */
+.rashi-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:36px}
+.rashi-chip{background:var(--raat-2);border:1px solid rgba(242,193,78,.16);border-radius:14px;padding:14px 8px;text-align:center;cursor:pointer;transition:transform .18s ease,border-color .18s ease,background .18s ease;font-family:'Mukta',sans-serif;color:var(--chaand)}
+.rashi-chip .rs{font-family:'Rozha One',serif;font-size:22px;color:var(--gold);display:block;line-height:1.2}
+.rashi-chip small{font-size:12.5px;color:var(--chaand-dim);letter-spacing:.03em}
+.rashi-chip:hover{transform:translateY(-3px);border-color:rgba(242,193,78,.45)}
+.rashi-chip.active{background:linear-gradient(165deg,#2A1C5E,#1D1345);border-color:var(--gold);box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.rashi-chip:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.rashi-out{margin-top:22px;border:1px solid rgba(242,193,78,.3);border-radius:var(--radius);background:linear-gradient(165deg,rgba(242,193,78,.08),rgba(34,22,80,.5));padding:26px 26px;display:none;animation:rise .5s ease}
+.rashi-out.show{display:block}
+.rashi-out h3{font-family:'Rozha One',serif;font-weight:400;font-size:24px;color:var(--gold);margin-bottom:8px}
+.rashi-out p{color:var(--chaand)}
+.rashi-out .hint{margin-top:14px;font-size:14px;color:var(--chaand-dim);border-top:1px dashed rgba(242,193,78,.3);padding-top:14px}
+
+/* ---------- report: preview + list ---------- */
+.report-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:52px;align-items:center;margin-top:38px}
+.preview{background:#141131;border:1px solid rgba(242,193,78,.22);border-radius:22px;padding:24px;box-shadow:0 26px 60px rgba(0,0,0,.5);max-width:440px;width:100%;margin:0 auto}
+.preview-head{display:flex;align-items:center;gap:10px;font-weight:700;padding-bottom:14px;border-bottom:1px solid rgba(247,241,227,.08)}
+.preview-head .dot{width:9px;height:9px;border-radius:50%;background:var(--sindoor)}
+.preview-head small{margin-left:auto;font-weight:600;font-size:12px;color:var(--chaand-dim);letter-spacing:.06em}
+.prow{padding:13px 2px;border-bottom:1px dashed rgba(247,241,227,.09);font-size:15px}
+.prow b{color:var(--gold)}
+.prow.locked{position:relative}
+.prow.locked .txt{filter:blur(4.5px);user-select:none}
+.prow.locked::after{content:"🔒 ₹19 mein khulta hai";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--gold);letter-spacing:.04em}
+.preview-foot{padding-top:16px;text-align:center;font-size:13px;color:var(--chaand-dim)}
+.rlist{list-style:none}
+.rlist li{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid rgba(247,241,227,.07)}
+.rlist .glyph{width:46px;height:46px;flex:none;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(242,193,78,.12);border:1px solid rgba(242,193,78,.3);font-family:'Rozha One',serif;font-size:20px;color:var(--gold)}
+.rlist h3{font-size:18.5px;font-weight:700}
+.rlist p{font-size:15px;color:var(--chaand-dim)}
+
+/* ---------- chat demo ---------- */
+.chat-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:center}
+.chat{background:#12102B;border:1px solid rgba(242,193,78,.18);border-radius:24px;padding:22px;box-shadow:0 26px 60px rgba(0,0,0,.45);max-width:460px;width:100%}
+.chat-head{display:flex;align-items:center;gap:12px;padding-bottom:14px;border-bottom:1px solid rgba(247,241,227,.08);margin-bottom:16px}
+.chat-head .avatar{width:40px;height:40px;flex:none}
+.chat-head b{display:block;font-size:16px}
+.chat-head small{color:var(--wa);font-size:12.5px;font-weight:600;display:inline-flex;align-items:center;gap:6px}
+.chat-head small::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--wa);animation:pulse 1.8s ease infinite}
+@keyframes pulse{50%{opacity:.35}}
+.bubble{max-width:86%;padding:11px 15px;border-radius:16px;font-size:15px;line-height:1.55;margin-bottom:11px}
+.from-user{background:#284A35;color:#EDF7EF;margin-left:auto;border-bottom-right-radius:5px}
+.from-baba{background:#241A52;color:var(--chaand);border:1px solid rgba(242,193,78,.14);border-bottom-left-radius:5px}
+.from-baba b{color:var(--gold);font-weight:700}
+.typing{display:inline-flex;gap:5px;padding:14px 16px}
+.typing i{width:7px;height:7px;border-radius:50%;background:var(--chaand-dim);animation:bounce 1.2s ease infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes bounce{30%{transform:translateY(-5px);opacity:1}60%{transform:none;opacity:.5}}
+.chat-note{text-align:center;font-size:13px;color:var(--chaand-dim);margin-top:6px}
+
+/* ---------- seedhi baat ---------- */
+.truth{border:1px solid rgba(242,193,78,.25);border-radius:26px;background:linear-gradient(165deg,rgba(242,193,78,.07),rgba(255,109,59,.05));padding:44px 38px}
+.truth-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:34px}
+.truth-item h3{font-family:'Rozha One',serif;font-weight:400;font-size:22px;color:var(--gold);margin-bottom:10px;line-height:1.3}
+.truth-item p{font-size:15.5px;color:var(--chaand-dim)}
+.truth-foot{margin-top:32px;padding-top:22px;border-top:1px dashed rgba(242,193,78,.3);font-size:15px;color:var(--chaand-dim)}
+.truth-foot b{color:var(--chaand)}
+
+/* ---------- compare ---------- */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:38px;align-items:stretch}
+.price-card{border-radius:var(--radius);padding:30px 26px;border:1px solid var(--raat-3);background:var(--raat-2)}
+.price-card.hero-price{border:1.5px solid var(--gold);background:linear-gradient(165deg,#2A1C5E,#1D1345);position:relative;overflow:hidden}
+.price-card.hero-price::after{content:"✦";position:absolute;right:-6px;top:-18px;font-size:110px;color:rgba(242,193,78,.09)}
+.price-card .who{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--chaand-dim)}
+.hero-price .who{color:var(--gold)}
+.price-card .amount{font-family:'Rozha One',serif;font-size:clamp(34px,4.5vw,46px);margin:10px 0 4px}
+.hero-price .amount{color:var(--gold)}
+.price-card ul{list-style:none;margin-top:16px}
+.price-card li{font-size:15px;color:var(--chaand-dim);padding:7px 0 7px 26px;position:relative}
+.price-card li::before{content:"—";position:absolute;left:0;color:var(--raat-3)}
+.hero-price li::before{content:"✓";color:var(--wa)}
+.hero-price li{color:var(--chaand)}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:760px;margin:38px auto 0}
+details{border-bottom:1px solid rgba(247,241,227,.1)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:20px 4px;font-weight:700;font-size:17px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:'Rozha One',serif;font-size:24px;color:var(--gold);transition:transform .25s ease;flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details .ans{padding:0 4px 22px;color:var(--chaand-dim);font-size:15.5px;max-width:64ch}
+summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:6px}
+
+/* ---------- final ---------- */
+.final{text-align:center;border-radius:30px;padding:70px 30px;position:relative;overflow:hidden;background:radial-gradient(520px 280px at 50% -20%,rgba(242,193,78,.16),transparent 70%),linear-gradient(170deg,#241852,#170F38);border:1px solid rgba(242,193,78,.25)}
+.final .ring{position:absolute;inset:auto;left:50%;top:50%;width:640px;height:640px;transform:translate(-50%,-50%);opacity:.14;animation:spin 120s linear infinite;pointer-events:none}
+.final h2{font-size:clamp(30px,5vw,46px);position:relative}
+.final .lead{margin:12px auto 30px;position:relative}
+.final .btn,.final .btn-note{position:relative}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid rgba(242,193,78,.14);padding:52px 0 120px;margin-top:80px;position:relative;z-index:2}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:44px}
+.foot-brand p{color:var(--chaand-dim);font-size:14.5px;max-width:44ch;margin-top:12px}
+.foot-legal details{border:0}
+.foot-legal summary{font-size:15px;padding:12px 4px}
+.foot-legal summary::after{font-size:19px}
+.foot-legal .ans{font-size:14px;padding-bottom:16px}
+.foot-meta{margin-top:34px;padding-top:22px;border-top:1px solid rgba(247,241,227,.08);display:flex;flex-wrap:wrap;gap:8px 26px;font-size:13.5px;color:var(--chaand-dim)}
+.foot-meta a{color:var(--gold);text-decoration:none}
+.foot-meta a:hover{text-decoration:underline}
+
+/* ---------- sticky CTA ---------- */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(18,12,42,.92);backdrop-filter:blur(14px);border-top:1px solid rgba(242,193,78,.2);display:none;transform:translateY(110%);transition:transform .35s ease}
+.sticky-cta.show{transform:translateY(0)}
+.sticky-in{display:flex;align-items:center;gap:14px;max-width:var(--maxw);margin:0 auto}
+.sticky-in .price{font-family:'Rozha One',serif;font-size:24px;color:var(--gold);flex:none}
+.sticky-in .price small{display:block;font-family:'Mukta',sans-serif;font-size:11px;color:var(--chaand-dim);letter-spacing:.06em}
+.sticky-in .btn{flex:1;padding:13px 18px;font-size:16px}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .section{padding:58px 0}
+  .hero{padding:44px 0 40px}
+  .hero-grid{grid-template-columns:1fr;gap:44px}
+  .chart-holder{max-width:440px;margin:0 auto}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr 1fr}
+  .steps::before{display:none}
+  .rashi-grid{grid-template-columns:repeat(4,1fr)}
+  .report-grid{grid-template-columns:1fr;gap:34px}
+  .chat-wrap{grid-template-columns:1fr;gap:34px}
+  .chat{margin:0 auto}
+  .truth{padding:34px 24px}
+  .truth-grid{grid-template-columns:1fr;gap:26px}
+  .compare{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .sticky-cta{display:block}
+  .nav-cta{display:none}
+}
+@media (max-width:520px){
+  .steps{grid-template-columns:1fr}
+  .rashi-grid{grid-template-columns:repeat(3,1fr)}
+}
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.001s!important;animation-iteration-count:1!important;transition:none!important}
+  #kundli .line{stroke-dashoffset:0}
+  #kundli .graha,#kundli .housenum{opacity:1}
+  .hero h1 .line,.hero .lead,.hero .cta-block{opacity:1;transform:none}
+  .reveal{opacity:1;transform:none}
+  .mandala,.final .ring{animation:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     KundliBaba AI · kundlibaba.in · v2 "sabse bestest"
+     ▸ SET YOUR WHATSAPP NUMBER once in the <script> at the bottom
+       (const WA_NUMBER). Every button updates automatically.
+============================================================ -->
+
+<canvas id="stars" aria-hidden="true"></canvas>
+<div id="progress" aria-hidden="true"></div>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#top" aria-label="KundliBaba AI home">
+      <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#221650"/><path d="M50 16 L84 50 L50 84 L16 50 Z" fill="none" stroke="#F2C14E" stroke-width="6"/><circle cx="50" cy="50" r="7" fill="#FF6D3B"/></svg>
+      KundliBaba <b>AI</b>
+    </a>
+    <a class="btn btn-ghost nav-cta wa-link" href="#">₹19 mein shuru karo</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">WhatsApp pe · 2 minute · UPI se</p>
+      <h1>
+        <span class="line">Aapki janm kundli,</span>
+        <span class="line"><span class="gold-shimmer">sirf ₹19</span> mein.</span>
+        <span class="line"><span class="hindi">बाबा</span> se poochho, AI se.</span>
+      </h1>
+      <p class="lead">WhatsApp pe janm ki date, samay aur jagah bhejo — <b>KundliBaba AI</b> aapki puri Vedic kundli banata hai, saaf Hinglish mein samjhata hai, aur aapke <b>5 sawaalon</b> ke jawab deta hai. Payment bhi wahin, chat ke andar, UPI se.</p>
+      <div class="cta-block">
+        <a class="btn btn-wa wa-link" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2m0 1.67c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.39-4.19-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24m-3.53 4.44c-.16 0-.43.06-.66.31-.22.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.46-.6 1.67-1.18.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.47-.28-.25-.13-1.46-.72-1.69-.8-.22-.08-.39-.12-.55.12-.16.25-.63.8-.77.96-.14.17-.28.19-.53.06-.25-.12-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.13-.55-1.34-.76-1.84-.2-.48-.4-.42-.55-.42h-.51z"/></svg>
+          WhatsApp pe shuru karo
+        </a>
+        <p class="btn-note">Pehli mini-reading <b>free</b> milegi · Refund? Bas ek message.</p>
+        <div class="chips">
+          <span class="chip"><i></i>UPI — secure, card nahi</span>
+          <span class="chip"><i></i>Turant refund policy</span>
+          <span class="chip"><i></i>AI hai — saaf-saaf likha hai</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- signature: rotating rashi-mandala + self-drawing kundli with orbiting grahas -->
+    <div class="chart-holder" id="chartHolder">
+      <svg class="mandala" id="mandala" viewBox="0 0 600 600" aria-hidden="true">
+        <circle class="ticks" cx="300" cy="300" r="284" pathLength="27"/>
+      </svg>
+      <figure class="chart-frame" id="chartFrame">
+        <span class="corner c1">✦</span><span class="corner c2">✦</span><span class="corner c3">✦</span><span class="corner c4">✦</span>
+        <svg id="kundli" viewBox="0 0 400 400" role="img" aria-label="Uttar Bhartiya shaili ki janm kundli — 12 bhav aur navagraha">
+          <path class="line" pathLength="1" d="M28 28 H372 V372 H28 Z"/>
+          <path class="line" pathLength="1" d="M28 28 L372 372"/>
+          <path class="line" pathLength="1" d="M372 28 L28 372"/>
+          <path class="line" pathLength="1" d="M200 28 L372 200 L200 372 L28 200 Z"/>
+          <text class="housenum" x="196" y="150">1</text>
+          <text class="housenum" x="106" y="82">2</text>
+          <text class="housenum" x="66" y="122">3</text>
+          <text class="housenum" x="140" y="204">4</text>
+          <text class="housenum" x="66" y="288">5</text>
+          <text class="housenum" x="106" y="330">6</text>
+          <text class="housenum" x="196" y="262">7</text>
+          <text class="housenum" x="286" y="330">8</text>
+          <text class="housenum" x="326" y="288">9</text>
+          <text class="housenum" x="252" y="204">10</text>
+          <text class="housenum" x="322" y="122">11</text>
+          <text class="housenum" x="282" y="82">12</text>
+          <text class="graha accent" x="182" y="118" style="transition-delay:1.2s">लग्न</text>
+          <text class="graha" x="188" y="182" style="transition-delay:1.35s">चं</text>
+          <text class="graha" x="94" y="116" style="transition-delay:1.5s">के</text>
+          <text class="graha" x="96" y="230" style="transition-delay:1.65s">मं</text>
+          <text class="graha" x="92" y="318" style="transition-delay:1.8s">गु</text>
+          <text class="graha" x="188" y="322" style="transition-delay:1.95s">शु</text>
+          <text class="graha" x="290" y="300" style="transition-delay:2.1s">रा</text>
+          <text class="graha" x="278" y="230" style="transition-delay:2.25s">सू बु</text>
+          <text class="graha" x="298" y="116" style="transition-delay:2.4s">श</text>
+          <circle class="orbiter" r="5" fill="#FF6D3B">
+            <animateMotion dur="16s" repeatCount="indefinite" path="M200 28 L372 200 L200 372 L28 200 Z"/>
+          </circle>
+          <circle class="orbiter2" r="3.6" fill="#F2C14E">
+            <animateMotion dur="26s" repeatCount="indefinite" path="M28 28 H372 V372 H28 Z"/>
+          </circle>
+        </svg>
+        <figcaption>Uttar Bhartiya shaili — aapke janm samay ke <b>asli graha-sthaan</b> se banti hai</figcaption>
+      </figure>
+    </div>
+  </div>
+</header>
+
+<!-- ================= AAJ KA DIN (live) ================= -->
+<div class="aaj">
+  <div class="wrap aaj-in">
+    <span class="diya">🪔</span>
+    <span><b>Aaj:</b> <span id="aajDate">—</span></span>
+    <span><span class="dev" id="aajGrahaDev">—</span> <b id="aajVaar">—</b> <small>— <span id="aajLine">…</span></small></span>
+  </div>
+</div>
+
+<!-- ================= NAVAGRAHA TICKER ================= -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span><b>सूर्य</b> Surya</span><span><b>चंद्र</b> Chandra</span><span><b>मंगल</b> Mangal</span><span><b>बुध</b> Budh</span><span><b>गुरु</b> Guru</span><span><b>शुक्र</b> Shukra</span><span><b>शनि</b> Shani</span><span><b>राहु</b> Rahu</span><span><b>केतु</b> Ketu</span><span><b>✦</b> Navagraha</span>
+  </div>
+</div>
+
+<!-- ================= HONEST NUMBERS ================= -->
+<section class="section" style="padding-bottom:30px">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat reveal"><div class="num" data-count="9">0</div><div class="lbl">Grahas ka ganit</div></div>
+      <div class="stat reveal"><div class="num" data-count="12">0</div><div class="lbl">Bhav (houses)</div></div>
+      <div class="stat reveal"><div class="num" data-count="27">0</div><div class="lbl">Nakshatra</div></div>
+      <div class="stat you reveal"><div class="num">1</div><div class="lbl">Aapki apni kahani</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="section" id="kaise">
+  <div class="wrap">
+    <p class="eyebrow reveal">Kaise hota hai</p>
+    <h2 class="reveal">Hi se report tak — <span style="color:var(--gold)">4 kadam</span>, koi app nahi</h2>
+    <p class="lead reveal">Sab kuch WhatsApp ke andar. Na download, na login, na form bharne ka jhanjhat.</p>
+    <div class="steps">
+      <div class="step reveal"><span class="tag">Free</span><h3>"Hi" bhejo</h3><p>Neeche wala button dabao — WhatsApp khulega, message pehle se likha hoga. Bas send karo.</p></div>
+      <div class="step reveal"><span class="tag">30 sec</span><h3>Janm details do</h3><p>Date, samay aur jagah — taps se select karo. Baba turant ek free mini-reading bhejta hai.</p></div>
+      <div class="step reveal"><span class="tag">UPI</span><h3>₹19 pay karo</h3><p>Chat ke andar hi pay button. UPI se seedha — na card, na OTP ka chakkar.</p></div>
+      <div class="step reveal"><span class="tag">24 ghante</span><h3>Report + 5 sawaal</h3><p>Puri kundli report turant. Phir 24 ghante tak apne 5 sawaal poochho — career, shaadi, paisa, kuch bhi.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">✦</div>
+
+<!-- ================= RASHI PICKER (interactive) ================= -->
+<section class="section" id="rashi">
+  <div class="wrap">
+    <p class="eyebrow reveal">Thoda maza, abhi ke liye</p>
+    <h2 class="reveal">Apni rashi chuno — <span style="color:var(--gold)">ek jhalak</span> free</h2>
+    <p class="lead reveal">Rashi ka matlab hai chandra rashi. Pata nahi kaun si hai? Koi baat nahi — kundli banate waqt Baba khud bata dega.</p>
+    <div class="rashi-grid" id="rashiGrid" role="list"></div>
+    <div class="rashi-out" id="rashiOut" aria-live="polite">
+      <h3 id="rashiTitle"></h3>
+      <p id="rashiText"></p>
+      <p class="hint">Yeh to sirf rashi ki jhalak hai — <b style="color:var(--chaand)">asli kahani aapke poore chart mein likhi hai:</b> lagna, nakshatra, dasha, sab. Wahi ₹19 mein khulti hai. 😊</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">✦</div>
+
+<!-- ================= REPORT PREVIEW + CONTENTS ================= -->
+<section class="section" id="report">
+  <div class="wrap">
+    <p class="eyebrow reveal">₹19 mein kya milta hai</p>
+    <h2 class="reveal">Puri report, panditji wali <span style="color:var(--gold)">gehrai</span> ke saath</h2>
+    <div class="report-grid">
+      <div class="preview reveal" aria-label="Report ka namoona">
+        <div class="preview-head"><span class="dot"></span> Aapki Kundli Report <small>NAMOONA</small></div>
+        <div class="prow"><b>Lagna:</b> Vrishchik · <b>Chandra rashi:</b> Kark · <b>Nakshatra:</b> Pushya</div>
+        <div class="prow"><b>Swabhav:</b> Aap andar se gehre aur dil ke sachche hain — jise apna maan lete ho, uske liye…</div>
+        <div class="prow locked"><span class="txt"><b>Career & paisa:</b> 10th bhav ka swami Surya ke saath yuti mein hai, iska matlab…</span></div>
+        <div class="prow locked"><span class="txt"><b>Vivah yog:</b> 7th bhav mein Shukra ki drishti aur Mangal ki sthiti batati hai ki…</span></div>
+        <div class="prow locked"><span class="txt"><b>2026 ka saal:</b> Aapki Shani mahadasha mein Budh ki antardasha shuru ho rahi hai…</span></div>
+        <div class="preview-foot">+ saral upay · + aapke 5 sawaalon ke jawab</div>
+      </div>
+      <ul class="rlist">
+        <li class="reveal"><div class="glyph">स्व</div><div><h3>Aapka swabhav</h3><p>Lagna, chandra rashi aur nakshatra se — aap andar se kaise hain, aur log aapko kaisa dekhte hain.</p></div></li>
+        <li class="reveal"><div class="glyph">₹</div><div><h3>Career aur paisa</h3><p>10th bhav, uska swami aur chal rahi dasha — naukri, business, aur kis disha mein zor lagana chahiye.</p></div></li>
+        <li class="reveal"><div class="glyph">♥</div><div><h3>Rishtey aur vivah</h3><p>7th bhav, Shukra aur Mangal ki sthiti — rishton ka mizaaj, aur vivah se jude sawaalon ki saaf baat.</p></div></li>
+        <li class="reveal"><div class="glyph">॰</div><div><h3>Yeh saal kaisa</h3><p>Mahadasha–antardasha aur bade gochar — aane wale 12 mahine kahan khulenge, kahan sambhal ke.</p></div></li>
+        <li class="reveal"><div class="glyph">✦</div><div><h3>Saral upay</h3><p>Bina kharch wale, karne-laayak suggestions. Hum ratna ya puja nahi bechte — sirf raah dikhate hain.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHAT DEMO ================= -->
+<section class="section" id="baba">
+  <div class="wrap chat-wrap">
+    <div>
+      <p class="eyebrow reveal">Baba se baat</p>
+      <h2 class="reveal">Seedhi baat, <span style="color:var(--gold)">bina daraye</span></h2>
+      <p class="lead reveal">Panditji se jo poochte sharm aati hai, Baba se poochho — Baba na judge karta hai, na darata hai, na kuch bechta hai. Sirf aapki kundli padhta hai aur saaf jawab deta hai.</p>
+      <p class="lead reveal" style="margin-top:14px">Hinglish mein poochho, Hindi mein poochho — jaise dost se baat karte ho.</p>
+    </div>
+    <div class="chat reveal" aria-label="WhatsApp chat ka namoona">
+      <div class="chat-head">
+        <svg class="avatar" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="50" fill="#221650"/><path d="M50 20 L80 50 L50 80 L20 50 Z" fill="none" stroke="#F2C14E" stroke-width="5"/><circle cx="50" cy="50" r="6" fill="#FF6D3B"/></svg>
+        <div><b>KundliBaba AI</b><small>online</small></div>
+      </div>
+      <div class="bubble from-user">Baba, naukri kab tak lagegi? 😅</div>
+      <div class="bubble from-baba"><b>Beta,</b> tumhari kundli mein abhi <b>Shani ki dhaiya</b> chal rahi hai — mehnat zyada, phal thoda der se. Lekin 10th bhav ka swami <b>Budh</b> strong hai, matlab field sahi chuni hai. Aane wale 4–6 mahine interviews ke liye behtar dikh rahe hain. Ghabrao mat, tayari jaari rakho. 🙏</div>
+      <div class="bubble from-user">Aur shaadi kab hogi? 😄</div>
+      <div class="bubble from-baba">Uska bhi dekh lete hain, beta — abhi tumhare paas <b>4 sawaal</b> aur bache hain. 😊</div>
+      <div class="bubble from-baba typing" aria-label="Baba likh raha hai"><i></i><i></i><i></i></div>
+      <p class="chat-note">Asli report isi andaaz mein aati hai — aapki kundli ke hisaab se.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SEEDHI BAAT ================= -->
+<section class="section" id="seedhi-baat">
+  <div class="wrap">
+    <div class="truth reveal">
+      <p class="eyebrow">Seedhi baat</p>
+      <h2>Hum aapko bewakoof nahi banate</h2>
+      <div class="truth-grid">
+        <div class="truth-item">
+          <h3>Yeh AI hai. Naam mein hi likha hai.</h3>
+          <p>Koi nakli "panditji online hain" ka natak nahi. Graha-sthaan ka ganit asli Vedic panchang se hota hai (astronomy-level calculation) — aur samjhane ka kaam AI karta hai.</p>
+        </div>
+        <div class="truth-item">
+          <h3>Isiliye sirf ₹19.</h3>
+          <p>Na call-center hai, na commission wale astrologer, na ratna bechne ka dhandha. Machine ka kharcha kam — to daam bhi kam. Simple.</p>
+        </div>
+        <div class="truth-item">
+          <h3>Pasand na aaye? Paise wapas.</h3>
+          <p>Chat mein sirf <b style="color:var(--chaand)">REFUND</b> likho — UPI mein turant wapas. Na form, na sawaal-jawab, na "24–48 hours".</p>
+        </div>
+      </div>
+      <p class="truth-foot"><b>Aur ek baat:</b> kundli ek <b>disha</b> hai, guarantee nahi. Baba raah dikhata hai, darata nahi — aur zindagi ke bade faisle hamesha apni samajh se lena. Yehi imaandari hamara sabse bada upay hai. 🙏</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICE COMPARE ================= -->
+<section class="section" id="daam">
+  <div class="wrap">
+    <p class="eyebrow reveal">Daam ki baat</p>
+    <h2 class="reveal">Wahi kundli, <span style="color:var(--gold)">chai se sasti</span></h2>
+    <div class="compare">
+      <div class="price-card reveal">
+        <p class="who">Mohalle ke panditji</p>
+        <p class="amount">₹500–2,000</p>
+        <ul>
+          <li>Pehle appointment, phir intezaar</li>
+          <li>Jhijhak wale sawaal poochhna mushkil</li>
+          <li>Aksar end mein ratna ya puja ki salah</li>
+        </ul>
+      </div>
+      <div class="price-card hero-price reveal">
+        <p class="who">KundliBaba AI</p>
+        <p class="amount">₹19</p>
+        <ul>
+          <li>2 minute mein puri report, WhatsApp pe</li>
+          <li>5 sawaal — kuch bhi, bina jhijhak, koi judge nahi</li>
+          <li>Kuch bechna nahi — aur refund ek message pe</li>
+        </ul>
+        <div style="margin-top:24px"><a class="btn btn-wa wa-link" href="#" style="width:100%"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2m0 1.67c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.39-4.19-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24m-3.53 4.44c-.16 0-.43.06-.66.31-.22.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.46-.6 1.67-1.18.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.47-.28-.25-.13-1.46-.72-1.69-.8-.22-.08-.39-.12-.55.12-.16.25-.63.8-.77.96-.14.17-.28.19-.53.06-.25-.12-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.13-.55-1.34-.76-1.84-.2-.48-.4-.42-.55-.42h-.51z"/></svg>Abhi banwao — ₹19</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="justify-content:center">Sawaal-jawab</p>
+    <h2 class="reveal" style="text-align:center">Jo sab poochte hain</h2>
+    <div class="faq reveal">
+      <details>
+        <summary>Kya jawab sach mein meri kundli se aate hain?</summary>
+        <div class="ans">Haan. Aapki janm date, samay aur jagah se grahon ke asli sthaan calculate hote hain (wahi ganit jo panchang mein hota hai) — report aur saare jawab usi chart par based hote hain. Isiliye janm ka samay jitna sahi doge, reading utni sateek hogi.</div>
+      </details>
+      <details>
+        <summary>Janm ka exact time nahi pata, to?</summary>
+        <div class="ans">Andaaza chalega — jitna paas hoga, utna accha. Report aapko bata bhi degi ki kaun se hisse time par zyada depend karte hain, taaki aap unhe halke mein padhein.</div>
+      </details>
+      <details>
+        <summary>Payment safe hai?</summary>
+        <div class="ans">Payment WhatsApp ke official payment flow se hota hai, UPI ke zariye — paisa seedha bank-grade gateway se process hota hai. Hum aapke card ya bank details kabhi store nahi karte.</div>
+      </details>
+      <details>
+        <summary>₹19 ke baad koi chhupa kharcha?</summary>
+        <div class="ans">Nahi. ₹19 mein puri report + 5 sawaal milte hain, bas. Agar aapko aur sawaal poochhne hon to aap khud recharge kar sakte ho — bina poochhe kabhi kuch charge nahi hota.</div>
+      </details>
+      <details>
+        <summary>Refund kaise milega?</summary>
+        <div class="ans">Chat mein REFUND likho. Bas. UPI mein turant refund initiate ho jaata hai — na form, na email, na intezaar.</div>
+      </details>
+      <details>
+        <summary>Kya Baba future ki guarantee deta hai?</summary>
+        <div class="ans">Nahi — aur jo deta hai, usse door raho. 😊 Jyotish ek disha dikhata hai: kaun sa samay kaisa hai, kahan dhyaan dena hai. Baba guidance deta hai, dar ya guarantee nahi bechta. Sehat, paise ya kanoon ke bade faisle hamesha expert se poochh kar lo.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="section">
+  <div class="wrap">
+    <div class="final reveal">
+      <svg class="ring" viewBox="0 0 600 600" aria-hidden="true"><circle cx="300" cy="300" r="284" fill="none" stroke="#F2C14E" stroke-width="5" pathLength="27" stroke-dasharray=".14 .86"/></svg>
+      <p class="eyebrow" style="justify-content:center">Shuru karein?</p>
+      <h2>Sitare wahi hain.<br>Padhne ka tareeka naya hai.</h2>
+      <p class="lead" style="text-align:center">2 minute. ₹19. Aur aapke 5 sabse zaroori sawaal.</p>
+      <a class="btn btn-wa wa-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor" width="21" height="21" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2m0 1.67c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.39-4.19-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24m-3.53 4.44c-.16 0-.43.06-.66.31-.22.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.46-.6 1.67-1.18.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.47-.28-.25-.13-1.46-.72-1.69-.8-.22-.08-.39-.12-.55.12-.16.25-.63.8-.77.96-.14.17-.28.19-.53.06-.25-.12-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.13-.55-1.34-.76-1.84-.2-.48-.4-.42-.55-.42h-.51z"/></svg>WhatsApp pe shuru karo</a>
+      <p class="btn-note">Pehli mini-reading free · Puri report ₹19 · Refund ek message pe</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="logo" href="#top"><svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#221650"/><path d="M50 16 L84 50 L50 84 L16 50 Z" fill="none" stroke="#F2C14E" stroke-width="6"/><circle cx="50" cy="50" r="7" fill="#FF6D3B"/></svg>KundliBaba <b>AI</b></a>
+      <p>WhatsApp pe Vedic janm kundli — asli graha-ganit, AI ki saaf samjhaish, aur seedhi baat. Bina daraye, bina bechne ke.</p>
+    </div>
+    <div class="foot-legal">
+      <details>
+        <summary>Disclaimer — zaroor padhein</summary>
+        <div class="ans">KundliBaba AI ki saari readings AI dwara generate hoti hain aur Vedic jyotish par aadharit <b>guidance / insight</b> ke liye hain. Yeh kisi bhi tarah ki guarantee, bhavishyavani ki pushti, ya medical, legal, financial ya psychological salah nahi hai. Sehat, paise, kanoon ya rishton ke bade faisle hamesha yogya professional se salah karke lein. Seva ka upyog karke aap in shartein sweekar karte hain.</div>
+      </details>
+      <details>
+        <summary>Refund policy</summary>
+        <div class="ans">Report pasand na aaye to usi chat mein <b>REFUND</b> likhein — aapka ₹19 UPI ke zariye turant refund initiate kar diya jaata hai, bina kisi sawaal ke. Refund aam taur par bank ke hisaab se kuch hi minutes se 5–7 karyadivas mein account mein dikh jaata hai. Kisi bhi dikkat ke liye: <a href="mailto:support@kundlibaba.in" style="color:var(--gold)">support@kundlibaba.in</a></div>
+      </details>
+      <details>
+        <summary>Privacy policy</summary>
+        <div class="ans">Hum sirf wahi data lete hain jo kundli banane ke liye zaroori hai — naam, janm ki date/samay/jagah aur aapka WhatsApp number. Yeh data sirf aapki report aur jawab generate karne ke liye istemal hota hai. Hum aapka data kisi ko bechte nahi, na hi advertising ke liye share karte hain. Payment card/bank details hum store nahi karte (payment official gateway se hota hai). Apna data delete karwane ke liye chat mein DELETE likhein ya <a href="mailto:support@kundlibaba.in" style="color:var(--gold)">support@kundlibaba.in</a> par likhein.</div>
+      </details>
+    </div>
+  </div>
+  <div class="wrap foot-meta">
+    <span>© 2026 KundliBaba AI</span>
+    <span>Ghaziabad, Uttar Pradesh, India</span>
+    <a href="mailto:support@kundlibaba.in">support@kundlibaba.in</a>
+    <span>Bharat mein bana 🇮🇳 · Samajhdari ke saath istemal karein 🙏</span>
+  </div>
+</footer>
+
+<!-- ================= STICKY MOBILE CTA ================= -->
+<div class="sticky-cta" id="stickyCta" aria-hidden="true">
+  <div class="sticky-in">
+    <div class="price">₹19<small>report + 5 sawaal</small></div>
+    <a class="btn btn-wa wa-link" href="#">WhatsApp pe shuru karo</a>
+  </div>
+</div>
+
+<script>
+/* ================== SET THIS ONCE ==================
+   Apna WhatsApp Business number yahan daalo (country code ke
+   saath, bina + ke). Example: "919876543210"                 */
+const WA_NUMBER = "919999999999";  // ⬅️ REPLACE BEFORE DEPLOY
+const WA_TEXT   = "Hi Baba 🙏 meri kundli banao";
+/* =================================================== */
+
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// ---- wire every CTA to wa.me
+const waUrl = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(WA_TEXT)}`;
+document.querySelectorAll('.wa-link').forEach(a => { a.href = waUrl; a.rel = "noopener"; });
+
+// ---- starfield ----------------------------------------------------
+(() => {
+  const cv = document.getElementById('stars'), ctx = cv.getContext('2d');
+  let stars = [], shoot = null, W, H, raf;
+  const resize = () => {
+    const dpr = Math.min(devicePixelRatio || 1, 2);
+    W = innerWidth; H = innerHeight;
+    cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const n = Math.min(150, Math.round(W * H / 11000));
+    stars = Array.from({length:n}, () => ({
+      x: Math.random()*W, y: Math.random()*H,
+      r: Math.random()*1.3 + .3, p: Math.random()*Math.PI*2,
+      s: .4 + Math.random()*.9, gold: Math.random() < .18
+    }));
+  };
+  const draw = t => {
+    ctx.clearRect(0,0,W,H);
+    for (const st of stars) {
+      const a = .25 + .55 * (0.5 + 0.5*Math.sin(st.p + t*0.001*st.s));
+      ctx.globalAlpha = a;
+      ctx.fillStyle = st.gold ? '#F2C14E' : '#EDE7FB';
+      ctx.beginPath(); ctx.arc(st.x, st.y, st.r, 0, 7); ctx.fill();
+    }
+    // shooting star
+    if (!reduceMotion) {
+      if (!shoot && Math.random() < 0.004) {
+        const y = Math.random()*H*0.5;
+        shoot = { x: Math.random()*W*0.7, y, vx: 7+Math.random()*4, vy: 2.4+Math.random()*1.6, life: 1 };
+      }
+      if (shoot) {
+        shoot.x += shoot.vx; shoot.y += shoot.vy; shoot.life -= .022;
+        ctx.globalAlpha = Math.max(shoot.life,0);
+        const g = ctx.createLinearGradient(shoot.x, shoot.y, shoot.x-60, shoot.y-22);
+        g.addColorStop(0,'#FFF3CF'); g.addColorStop(1,'transparent');
+        ctx.strokeStyle = g; ctx.lineWidth = 1.6;
+        ctx.beginPath(); ctx.moveTo(shoot.x, shoot.y); ctx.lineTo(shoot.x-60, shoot.y-22); ctx.stroke();
+        if (shoot.life <= 0 || shoot.x > W+80) shoot = null;
+      }
+    }
+    ctx.globalAlpha = 1;
+    raf = requestAnimationFrame(draw);
+  };
+  resize(); addEventListener('resize', resize);
+  if (reduceMotion) { // static sky
+    for (const st of stars){ ctx.globalAlpha=.5; ctx.fillStyle= st.gold?'#F2C14E':'#EDE7FB'; ctx.beginPath(); ctx.arc(st.x,st.y,st.r,0,7); ctx.fill(); }
+  } else {
+    raf = requestAnimationFrame(draw);
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) cancelAnimationFrame(raf); else raf = requestAnimationFrame(draw);
+    });
+  }
+})();
+
+// ---- rashi mandala names ------------------------------------------
+(() => {
+  const names = ["मेष","वृषभ","मिथुन","कर्क","सिंह","कन्या","तुला","वृश्चिक","धनु","मकर","कुंभ","मीन"];
+  const svg = document.getElementById('mandala');
+  const NS = 'http://www.w3.org/2000/svg';
+  names.forEach((n,i) => {
+    const g = document.createElementNS(NS,'g');
+    g.setAttribute('transform', `rotate(${i*30} 300 300)`);
+    const t = document.createElementNS(NS,'text');
+    t.setAttribute('x','300'); t.setAttribute('y','30'); t.setAttribute('text-anchor','middle');
+    t.textContent = n;
+    g.appendChild(t); svg.appendChild(g);
+  });
+})();
+
+// ---- kundli draw + remove orbiters on reduced motion ---------------
+window.addEventListener('load', () => {
+  if (reduceMotion) document.querySelectorAll('#kundli animateMotion').forEach(a => a.parentElement.remove());
+  requestAnimationFrame(() => document.getElementById('chartHolder').classList.add('drawn'));
+});
+
+// ---- tilt on the chart card (fine pointers only) --------------------
+(() => {
+  if (reduceMotion || !matchMedia('(hover:hover) and (pointer:fine)').matches) return;
+  const holder = document.getElementById('chartHolder'), card = document.getElementById('chartFrame');
+  let raf = null;
+  holder.addEventListener('pointermove', e => {
+    if (raf) return;
+    raf = requestAnimationFrame(() => {
+      const r = holder.getBoundingClientRect();
+      const rx = ((e.clientY - r.top)/r.height - .5) * -8;
+      const ry = ((e.clientX - r.left)/r.width - .5) * 8;
+      card.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+      raf = null;
+    });
+  });
+  holder.addEventListener('pointerleave', () => card.style.transform = '');
+})();
+
+// ---- aaj ka din (real vaar → graha) ---------------------------------
+(() => {
+  const vaar = [
+    ["Ravivaar","सूर्य","Atma-vishwas aur nayi shuruaat ka din"],
+    ["Somvaar","चंद्र","Man ki sunne aur shaanti ka din"],
+    ["Mangalvaar","मंगल","Himmat aur zor lagane ka din"],
+    ["Budhvaar","बुध","Baat-cheet, padhai aur vyapar ka din"],
+    ["Guruvaar","गुरु","Seekhne aur shubh kaam ka din"],
+    ["Shukravaar","शुक्र","Rishton aur khushiyon ka din"],
+    ["Shanivaar","शनि","Mehnat, seva aur sabr ka din"]
+  ];
+  const d = new Date(), v = vaar[d.getDay()];
+  document.getElementById('aajDate').textContent = d.toLocaleDateString('hi-IN',{day:'numeric',month:'long',year:'numeric'});
+  document.getElementById('aajVaar').textContent = v[0];
+  document.getElementById('aajGrahaDev').textContent = v[1];
+  document.getElementById('aajLine').textContent = v[2];
+})();
+
+// ---- ticker loop -----------------------------------------------------
+const track = document.getElementById('tickerTrack');
+track.innerHTML += track.innerHTML;
+
+// ---- honest count-ups ------------------------------------------------
+(() => {
+  const ease = x => 1 - Math.pow(1-x, 3);
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    io.unobserve(en.target);
+    const el = en.target, target = +el.dataset.count;
+    if (reduceMotion) { el.textContent = target; return; }
+    const t0 = performance.now(), dur = 900;
+    (function tick(t){
+      const p = Math.min((t - t0)/dur, 1);
+      el.textContent = Math.round(ease(p)*target);
+      if (p < 1) requestAnimationFrame(tick);
+    })(t0);
+  }), {threshold:.6});
+  document.querySelectorAll('[data-count]').forEach(el => io.observe(el));
+})();
+
+// ---- rashi picker ----------------------------------------------------
+(() => {
+  const data = [
+    ["मे","Mesh","Aag jaisa josh — pehle karte ho, phir sochte ho. Sahi disha mil jaaye to rukna namumkin."],
+    ["वृ","Vrishabh","Sabr aur mazbooti tumhari taakat hai — bas zid kabhi-kabhi apne hi raste rok deti hai."],
+    ["मि","Mithun","Dimaag tez, baatein aur bhi tez. Bore hona tumse ho hi nahi sakta."],
+    ["क","Kark","Dil se sochte ho — ghar aur apne log tumhari duniya hain. Mood? Samandar ki lehron jaisa."],
+    ["सिं","Simha","Andar se raja/rani ho — izzat mile to jaan laga dete ho."],
+    ["कन्","Kanya","Har cheez perfect chahiye. Galti pakadne mein tumhari PhD hai. 😄"],
+    ["तु","Tula","Balance tumhara mantra hai — bas decision lete waqt tarazu thoda hilta rehta hai."],
+    ["वृश्","Vrishchik","Gehraai tumhari pehchaan hai — jo dil mein hai, wo chehre pe kabhi nahi aata."],
+    ["ध","Dhanu","Khuli soch, seedhi zubaan. Ghoomna aur seekhna tumhari oxygen hai."],
+    ["म","Makar","Dheere chalte ho, par pahunch ke rehte ho. Bharosa mehnat pe hai, shortcuts pe nahi."],
+    ["कुं","Kumbh","Sabse alag sochte ho — bheed tumhe follow karti hai, tum kisi ko nahi."],
+    ["मी","Meen","Sapno aur ehsaas ki duniya mein rehte ho — doosron ka dard bhi apna lagta hai."]
+  ];
+  const grid = document.getElementById('rashiGrid'), out = document.getElementById('rashiOut');
+  const title = document.getElementById('rashiTitle'), text = document.getElementById('rashiText');
+  data.forEach(([dev, name, line], i) => {
+    const b = document.createElement('button');
+    b.className = 'rashi-chip'; b.type = 'button'; b.setAttribute('role','listitem');
+    b.innerHTML = `<span class="rs">${dev}</span><small>${name}</small>`;
+    b.addEventListener('click', () => {
+      grid.querySelectorAll('.rashi-chip').forEach(c => c.classList.remove('active'));
+      b.classList.add('active');
+      title.textContent = `${name} rashi — ek jhalak`;
+      text.textContent = line;
+      out.classList.add('show');
+    });
+    grid.appendChild(b);
+  });
+})();
+
+// ---- reveal on scroll -------------------------------------------------
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// ---- sticky mobile CTA -------------------------------------------------
+const hero = document.querySelector('.hero');
+const sticky = document.getElementById('stickyCta');
+new IntersectionObserver(([e]) => {
+  sticky.classList.toggle('show', !e.isIntersecting);
+  sticky.setAttribute('aria-hidden', e.isIntersecting);
+}, { threshold: 0 }).observe(hero);
+
+// ---- scroll progress bar ------------------------------------------------
+(() => {
+  const bar = document.getElementById('progress');
+  let raf = null;
+  const update = () => {
+    const h = document.documentElement;
+    const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+    bar.style.transform = `scaleX(${p})`;
+    raf = null;
+  };
+  addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(update); }, {passive:true});
+  update();
+})();
+</script>
+</body>
+</html>
