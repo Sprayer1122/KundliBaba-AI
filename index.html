@@ -261,10 +261,10 @@ footer{border-top:1px solid rgba(242,193,78,.14);padding:52px 0 120px;margin-top
 .foot-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:44px}
 .foot-brand .logo-mark{width:40px;height:40px}
 .foot-brand p{color:var(--chaand-dim);font-size:14.5px;max-width:44ch;margin-top:12px}
-.foot-legal details{border:0}
-.foot-legal summary{font-size:15px;padding:12px 4px}
-.foot-legal summary::after{font-size:19px}
-.foot-legal .ans{font-size:14px;padding-bottom:16px}
+.foot-legal nav{display:flex;flex-direction:column;gap:4px}
+.foot-legal a{display:block;font-size:15px;font-weight:600;color:var(--chaand-dim);text-decoration:none;padding:10px 4px;transition:color .15s}
+.foot-legal a:hover{color:var(--gold)}
+.foot-legal .legal-label{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
 .foot-meta{margin-top:34px;padding-top:22px;border-top:1px solid rgba(247,241,227,.08);display:flex;flex-wrap:wrap;gap:8px 26px;font-size:13.5px;color:var(--chaand-dim)}
 .foot-meta a{color:var(--gold);text-decoration:none}
 .foot-meta a:hover{text-decoration:underline}
@@ -632,18 +632,12 @@ footer{border-top:1px solid rgba(242,193,78,.14);padding:52px 0 120px;margin-top
       <p>WhatsApp pe Vedic janm kundli — asli graha-ganit, AI ki saaf samjhaish, aur seedhi baat. Bina daraye, bina bechne ke.</p>
     </div>
     <div class="foot-legal">
-      <details>
-        <summary>Disclaimer — zaroor padhein</summary>
-        <div class="ans">KundliBaba AI ki saari readings AI dwara generate hoti hain aur Vedic jyotish par aadharit <b>guidance / insight</b> ke liye hain. Yeh kisi bhi tarah ki guarantee, bhavishyavani ki pushti, ya medical, legal, financial ya psychological salah nahi hai. Sehat, paise, kanoon ya rishton ke bade faisle hamesha yogya professional se salah karke lein. Seva ka upyog karke aap in shartein sweekar karte hain.</div>
-      </details>
-      <details>
-        <summary>Refund policy</summary>
-        <div class="ans">Report pasand na aaye to usi chat mein <b>REFUND</b> likhein — aapka ₹19 UPI ke zariye turant refund initiate kar diya jaata hai, bina kisi sawaal ke. Refund aam taur par bank ke hisaab se kuch hi minutes se 5–7 karyadivas mein account mein dikh jaata hai. Kisi bhi dikkat ke liye: <a href="mailto:support@kundlibaba.in" style="color:var(--gold)">support@kundlibaba.in</a></div>
-      </details>
-      <details>
-        <summary>Privacy policy</summary>
-        <div class="ans">Hum sirf wahi data lete hain jo kundli banane ke liye zaroori hai — naam, janm ki date/samay/jagah aur aapka WhatsApp number. Yeh data sirf aapki report aur jawab generate karne ke liye istemal hota hai. Hum aapka data kisi ko bechte nahi, na hi advertising ke liye share karte hain. Payment card/bank details hum store nahi karte (payment official gateway se hota hai). Apna data delete karwane ke liye chat mein DELETE likhein ya <a href="mailto:support@kundlibaba.in" style="color:var(--gold)">support@kundlibaba.in</a> par likhein.</div>
-      </details>
+      <p class="legal-label">Legal</p>
+      <nav aria-label="Legal pages">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="data-deletion.html">Data Deletion</a>
+      </nav>
     </div>
   </div>
   <div class="wrap foot-meta">
