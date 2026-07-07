@@ -1,0 +1,16 @@
+{
+  "name": "KundliBaba AI",
+  "short_name": "KundliBaba",
+  "description": "WhatsApp pe Vedic janm kundli — sirf ₹19 mein, 2 minute mein.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#160F33",
+  "theme_color": "#160F33",
+  "lang": "hi-IN",
+  "icons": [
+    { "src": "logo/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "logo/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "logo/icon-squircle.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "logo/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
