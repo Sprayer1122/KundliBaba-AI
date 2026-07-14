@@ -24,6 +24,7 @@ window.KB_I18N = (function () {
   /* ================= ENGLISH (default) ================= */
   en: {
     htmlLang: "en",
+    graha: ["Lagna","Cha","Ket","Man","Gur","Shu","Rah","Su Bu","Sha"],
     dateLocale: "en-IN",
     waText: "Hi Baba 🙏 please make my kundli",
 
@@ -174,6 +175,7 @@ window.KB_I18N = (function () {
   /* ================= HINGLISH ================= */
   hinglish: {
     htmlLang: "hi-Latn",
+    graha: ["Lagna","Cha","Ket","Man","Gur","Shu","Rah","Su Bu","Sha"],
     dateLocale: "en-IN",
     waText: "Hi Baba 🙏 meri kundli banao",
 
@@ -324,6 +326,7 @@ window.KB_I18N = (function () {
   /* ================= हिन्दी ================= */
   hi: {
     htmlLang: "hi",
+    graha: ["लग्न","चं","के","मं","गु","शु","रा","सू बु","श"],
     dateLocale: "hi-IN",
     waText: "Hi Baba 🙏 मेरी कुंडली बनाइए",
 
@@ -474,6 +477,7 @@ window.KB_I18N = (function () {
   /* ================= मराठी ================= */
   mr: {
     htmlLang: "mr",
+    graha: ["लग्न","चं","के","मं","गु","शु","रा","सू बु","श"],
     dateLocale: "mr-IN",
     waText: "Hi Baba 🙏 माझी कुंडली बनवा",
 
@@ -624,6 +628,7 @@ window.KB_I18N = (function () {
   /* ================= ਪੰਜਾਬੀ ================= */
   pa: {
     htmlLang: "pa",
+    graha: ["ਲਗਨ","ਚੰ","ਕੇ","ਮੰ","ਗੁ","ਸ਼ੁ","ਰਾ","ਸੂ ਬੁ","ਸ਼"],
     dateLocale: "pa-IN",
     waText: "Hi Baba 🙏 ਮੇਰੀ ਕੁੰਡਲੀ ਬਣਾਓ",
 
@@ -774,6 +779,7 @@ window.KB_I18N = (function () {
   /* ================= ગુજરાતી ================= */
   gu: {
     htmlLang: "gu",
+    graha: ["લગ્ન","ચં","કે","મં","ગુ","શુ","રા","સૂ બુ","શ"],
     dateLocale: "gu-IN",
     waText: "Hi Baba 🙏 મારી કુંડળી બનાવો",
 
@@ -924,6 +930,7 @@ window.KB_I18N = (function () {
   /* ================= বাংলা ================= */
   bn: {
     htmlLang: "bn",
+    graha: ["লগ্ন","চ","কে","ম","গু","শু","রা","সূ বু","শনি"],
     dateLocale: "bn-IN",
     waText: "Hi Baba 🙏 আমার কুণ্ডলী বানান",
 
@@ -1074,6 +1081,7 @@ window.KB_I18N = (function () {
   /* ================= தமிழ் ================= */
   ta: {
     htmlLang: "ta",
+    graha: ["லக்","சந்","கே","செ","கு","சு","ரா","சூ பு","ச"],
     dateLocale: "ta-IN",
     waText: "Hi Baba 🙏 என் ஜாதகத்தை உருவாக்குங்கள்",
 
@@ -1224,6 +1232,7 @@ window.KB_I18N = (function () {
   /* ================= తెలుగు ================= */
   te: {
     htmlLang: "te",
+    graha: ["లగ్","చం","కే","కు","గు","శు","రా","సూ బు","శ"],
     dateLocale: "te-IN",
     waText: "Hi Baba 🙏 నా కుండలి తయారు చేయండి",
 

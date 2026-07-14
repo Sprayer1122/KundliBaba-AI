@@ -419,15 +419,15 @@ footer{border-top:1px solid rgba(242,193,78,.14);padding:52px 0 120px;margin-top
           <text class="housenum" x="252" y="204">10</text>
           <text class="housenum" x="322" y="122">11</text>
           <text class="housenum" x="282" y="82">12</text>
-          <text class="graha accent" x="182" y="118" style="transition-delay:1.2s">लग्न</text>
-          <text class="graha" x="188" y="182" style="transition-delay:1.35s">चं</text>
-          <text class="graha" x="94" y="116" style="transition-delay:1.5s">के</text>
-          <text class="graha" x="96" y="230" style="transition-delay:1.65s">मं</text>
-          <text class="graha" x="92" y="318" style="transition-delay:1.8s">गु</text>
-          <text class="graha" x="188" y="322" style="transition-delay:1.95s">शु</text>
-          <text class="graha" x="290" y="300" style="transition-delay:2.1s">रा</text>
-          <text class="graha" x="278" y="230" style="transition-delay:2.25s">सू बु</text>
-          <text class="graha" x="298" y="116" style="transition-delay:2.4s">श</text>
+          <text class="graha accent" data-graha="0" x="182" y="118" style="transition-delay:1.2s">लग्न</text>
+          <text class="graha" data-graha="1" x="188" y="182" style="transition-delay:1.35s">चं</text>
+          <text class="graha" data-graha="2" x="94" y="116" style="transition-delay:1.5s">के</text>
+          <text class="graha" data-graha="3" x="96" y="230" style="transition-delay:1.65s">मं</text>
+          <text class="graha" data-graha="4" x="92" y="318" style="transition-delay:1.8s">गु</text>
+          <text class="graha" data-graha="5" x="188" y="322" style="transition-delay:1.95s">शु</text>
+          <text class="graha" data-graha="6" x="290" y="300" style="transition-delay:2.1s">रा</text>
+          <text class="graha" data-graha="7" x="278" y="230" style="transition-delay:2.25s">सू बु</text>
+          <text class="graha" data-graha="8" x="298" y="116" style="transition-delay:2.4s">श</text>
           <circle class="orbiter" r="5" fill="#FF6D3B">
             <animateMotion dur="16s" repeatCount="indefinite" path="M200 28 L372 200 L200 372 L28 200 Z"/>
           </circle>
@@ -728,8 +728,42 @@ function renderAaj(dict){
 
 function renderTicker(dict){
   const track = el('tickerTrack');
-  const items = (dict.ticker || KB.strings.en.ticker).map(([dev,lat]) => `<span><b>${dev}</b> ${lat}</span>`).join('');
+  // Each page shows planet names in its own script only: Latin audiences get the
+  // romanisation, native pages get the native name (no foreign script leaks in).
+  // The "✦ Navagraha" closer is stored as [star, word]; show the word for both.
+  const showLat = currentLang === 'en' || currentLang === 'hinglish';
+  const items = (dict.ticker || KB.strings.en.ticker)
+    .map(([dev,lat]) => {
+      const label = showLat ? (lat || dev) : (dev === '✦' ? (lat || dev) : dev);
+      return `<span><b>${label}</b></span>`;
+    }).join('');
   track.innerHTML = items + items; // duplicate for a seamless loop
+}
+
+// ---- rotating rashi mandala (localised per language) ----------------
+function renderMandala(dict){
+  const svg = el('mandala');
+  if (!svg) return;
+  svg.querySelectorAll('g').forEach(g => g.remove()); // keep the ticks circle
+  const NS = 'http://www.w3.org/2000/svg';
+  const names = (dict.rashi || KB.strings.en.rashi).map(r => (r[1] || '').split(' · ')[0].trim());
+  names.forEach((n,i) => {
+    const g = document.createElementNS(NS,'g');
+    g.setAttribute('transform', `rotate(${i*30} 300 300)`);
+    const t = document.createElementNS(NS,'text');
+    t.setAttribute('x','300'); t.setAttribute('y','30'); t.setAttribute('text-anchor','middle');
+    t.textContent = n;
+    g.appendChild(t); svg.appendChild(g);
+  });
+}
+
+// ---- sample-chart planet labels (localised per language) ------------
+function renderChart(dict){
+  const g = dict.graha || KB.strings.en.graha;
+  document.querySelectorAll('#kundli .graha').forEach(t => {
+    const i = +t.getAttribute('data-graha');
+    if (!Number.isNaN(i) && g && g[i] != null) t.textContent = g[i];
+  });
 }
 
 function renderRashi(dict){
@@ -769,6 +803,8 @@ function applyLang(lang){
   renderAaj(dict);
   renderTicker(dict);
   renderRashi(dict);
+  renderMandala(dict);
+  renderChart(dict);
 
   const cur = KB.languages.find(l => l.code === lang);
   el('langCurrent').textContent = cur ? cur.native : 'English';
@@ -860,21 +896,6 @@ applyLang(getInitialLang());
       if (document.hidden) cancelAnimationFrame(raf); else raf = requestAnimationFrame(draw);
     });
   }
-})();
-
-// ---- rashi mandala names ------------------------------------------
-(() => {
-  const names = ["मेष","वृषभ","मिथुन","कर्क","सिंह","कन्या","तुला","वृश्चिक","धनु","मकर","कुंभ","मीन"];
-  const svg = document.getElementById('mandala');
-  const NS = 'http://www.w3.org/2000/svg';
-  names.forEach((n,i) => {
-    const g = document.createElementNS(NS,'g');
-    g.setAttribute('transform', `rotate(${i*30} 300 300)`);
-    const t = document.createElementNS(NS,'text');
-    t.setAttribute('x','300'); t.setAttribute('y','30'); t.setAttribute('text-anchor','middle');
-    t.textContent = n;
-    g.appendChild(t); svg.appendChild(g);
-  });
 })();
 
 // ---- kundli draw + remove orbiters on reduced motion ---------------
