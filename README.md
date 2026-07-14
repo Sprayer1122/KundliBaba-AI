@@ -1,6 +1,6 @@
 # KundliBaba AI
 
-AI-powered Vedic kundli on WhatsApp — sirf ₹19 mein, 2 minute mein.
+AI-powered Vedic kundli on WhatsApp — free in 2 minutes, then 5 personal questions for ₹99. Website is English by default with an in-page switcher for Hindi, Hinglish, Marathi, Punjabi, Gujarati, Bengali, Tamil and Telugu (copy lives in `i18n.js`).
 
 **Brand assets:** `logo/` (Cosmic Yantra mark — circle, squircle, favicons, WhatsApp DP sizes).
 
