@@ -26,7 +26,7 @@ window.KB_I18N = (function () {
     htmlLang: "en",
     graha: ["Asc","Mo","Ke","Ma","Ju","Ve","Ra","Su Me","Sa"],
     dateLocale: "en-IN",
-    waText: "Hi Baba 🙏 please make my kundli",
+    waText: "Hi Baba, please make my kundli",
 
     navCta: "Free kundli on WhatsApp",
 
@@ -176,7 +176,7 @@ window.KB_I18N = (function () {
     htmlLang: "hi-Latn",
     graha: ["Lg","Cha","Ket","Man","Gur","Shu","Rah","Su Bu","Sha"],
     dateLocale: "en-IN",
-    waText: "Hi Baba 🙏 meri kundli banao",
+    waText: "Hi Baba, meri kundli banao",
 
     navCta: "WhatsApp pe free kundli",
 
@@ -326,7 +326,7 @@ window.KB_I18N = (function () {
     htmlLang: "hi",
     graha: ["लग्न","चं","के","मं","गु","शु","रा","सू बु","श"],
     dateLocale: "hi-IN",
-    waText: "Hi Baba 🙏 मेरी कुंडली बनाइए",
+    waText: "Hi Baba, मेरी कुंडली बनाइए",
 
     navCta: "WhatsApp पर मुफ़्त कुंडली",
 
@@ -476,7 +476,7 @@ window.KB_I18N = (function () {
     htmlLang: "mr",
     graha: ["लग्न","चं","के","मं","गु","शु","रा","सू बु","श"],
     dateLocale: "mr-IN",
-    waText: "Hi Baba 🙏 माझी कुंडली बनवा",
+    waText: "Hi Baba, माझी कुंडली बनवा",
 
     navCta: "WhatsApp वर मोफत कुंडली",
 
@@ -626,7 +626,7 @@ window.KB_I18N = (function () {
     htmlLang: "pa",
     graha: ["ਲਗਨ","ਚੰ","ਕੇ","ਮੰ","ਗੁ","ਸ਼ੁ","ਰਾ","ਸੂ ਬੁ","ਸ਼"],
     dateLocale: "pa-IN",
-    waText: "Hi Baba 🙏 ਮੇਰੀ ਕੁੰਡਲੀ ਬਣਾਓ",
+    waText: "Hi Baba, ਮੇਰੀ ਕੁੰਡਲੀ ਬਣਾਓ",
 
     navCta: "WhatsApp 'ਤੇ ਮੁਫ਼ਤ ਕੁੰਡਲੀ",
 
@@ -776,7 +776,7 @@ window.KB_I18N = (function () {
     htmlLang: "gu",
     graha: ["લગ્ન","ચં","કે","મં","ગુ","શુ","રા","સૂ બુ","શ"],
     dateLocale: "gu-IN",
-    waText: "Hi Baba 🙏 મારી કુંડળી બનાવો",
+    waText: "Hi Baba, મારી કુંડળી બનાવો",
 
     navCta: "WhatsApp પર મફત કુંડળી",
 
@@ -926,7 +926,7 @@ window.KB_I18N = (function () {
     htmlLang: "bn",
     graha: ["লগ্ন","চ","কে","ম","গু","শু","রা","সূ বু","শনি"],
     dateLocale: "bn-IN",
-    waText: "Hi Baba 🙏 আমার কুণ্ডলী বানান",
+    waText: "Hi Baba, আমার কুণ্ডলী বানান",
 
     navCta: "WhatsApp-এ ফ্রি কুণ্ডলী",
 
@@ -1076,7 +1076,7 @@ window.KB_I18N = (function () {
     htmlLang: "ta",
     graha: ["லக்","சந்","கே","செ","கு","சு","ரா","சூ பு","ச"],
     dateLocale: "ta-IN",
-    waText: "Hi Baba 🙏 என் ஜாதகத்தை உருவாக்குங்கள்",
+    waText: "Hi Baba, என் ஜாதகத்தை உருவாக்குங்கள்",
 
     navCta: "WhatsApp-இல் இலவச ஜாதகம்",
 
@@ -1226,7 +1226,7 @@ window.KB_I18N = (function () {
     htmlLang: "te",
     graha: ["లగ్న","చం","కే","కు","గు","శు","రా","సూ బు","శ"],
     dateLocale: "te-IN",
-    waText: "Hi Baba 🙏 నా కుండలి తయారు చేయండి",
+    waText: "Hi Baba, నా కుండలి తయారు చేయండి",
 
     navCta: "WhatsApp-లో ఉచిత కుండలి",
 
