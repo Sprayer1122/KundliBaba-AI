@@ -32,7 +32,7 @@ window.KB_I18N = (function () {
 
     heroEyebrow: "On WhatsApp · 2 minutes · No app needed",
     heroL1: "Your janm kundli,",
-    heroL2: '<span class="gold-shimmer">just ₹199</span>.',
+    heroL2: '<span class="gold-shimmer">free</span>.',
     heroL3: 'Ask <span class="accent">AI Baba</span>',
     heroLead: "Send your birth date, time and place on WhatsApp — <b>KundliBaba AI</b> calculates your real Vedic kundli and explains it clearly, <b>free</b>. Want to go deeper? Ask <b>5 personal questions for ₹199</b> — career, marriage, money, anything.",
     heroCta: "Get my free kundli",
@@ -182,7 +182,7 @@ window.KB_I18N = (function () {
 
     heroEyebrow: "WhatsApp pe · 2 minute · Koi app nahi",
     heroL1: "Aapki janm kundli,",
-    heroL2: '<span class="gold-shimmer">sirf ₹199</span> mein.',
+    heroL2: '<span class="gold-shimmer">bilkul free</span>.',
     heroL3: '<span class="accent">AI Baba</span> se poochho',
     heroLead: "WhatsApp pe janm ki date, samay aur jagah bhejo — <b>KundliBaba AI</b> aapki asli Vedic kundli banata hai aur saaf-saaf samjhata hai, <b>bilkul free</b>. Aur gehraai chahiye? <b>₹199 mein 5 personal sawaal</b> poochho — career, shaadi, paisa, kuch bhi.",
     heroCta: "Meri free kundli banao",
@@ -332,7 +332,7 @@ window.KB_I18N = (function () {
 
     heroEyebrow: "WhatsApp पर · 2 मिनट · कोई ऐप नहीं",
     heroL1: "आपकी जन्म कुंडली,",
-    heroL2: '<span class="gold-shimmer">सिर्फ़ ₹199</span> में।',
+    heroL2: '<span class="gold-shimmer">मुफ़्त</span>।',
     heroL3: '<span class="accent">AI बाबा</span> से पूछो',
     heroLead: "WhatsApp पर जन्म की तारीख़, समय और जगह भेजिए — <b>KundliBaba AI</b> आपकी असली वैदिक कुंडली बनाता है और सरल भाषा में समझाता है, <b>बिल्कुल मुफ़्त</b>। और गहराई चाहिए? <b>₹199 में 5 निजी सवाल</b> पूछिए — करियर, विवाह, धन, कुछ भी।",
     heroCta: "मेरी मुफ़्त कुंडली बनाइए",
@@ -482,7 +482,7 @@ window.KB_I18N = (function () {
 
     heroEyebrow: "WhatsApp वर · 2 मिनिटे · अ‍ॅपची गरज नाही",
     heroL1: "तुमची जन्मकुंडली,",
-    heroL2: '<span class="gold-shimmer">फक्त ₹199</span> मध्ये.',
+    heroL2: '<span class="gold-shimmer">मोफत</span>.',
     heroL3: '<span class="accent">AI बाबांना</span> विचारा',
     heroLead: "WhatsApp वर जन्मतारीख, वेळ आणि ठिकाण पाठवा — <b>KundliBaba AI</b> तुमची खरी वैदिक कुंडली बनवतो आणि सोप्या भाषेत समजावतो, <b>पूर्ण मोफत</b>. आणखी खोलात जायचंय? <b>₹199 मध्ये 5 वैयक्तिक प्रश्न</b> विचारा — करिअर, लग्न, पैसा, काहीही.",
     heroCta: "माझी मोफत कुंडली बनवा",
@@ -632,7 +632,7 @@ window.KB_I18N = (function () {
 
     heroEyebrow: "WhatsApp 'ਤੇ · 2 ਮਿੰਟ · ਕੋਈ ਐਪ ਨਹੀਂ",
     heroL1: "ਤੁਹਾਡੀ ਜਨਮ ਕੁੰਡਲੀ,",
-    heroL2: '<span class="gold-shimmer">ਸਿਰਫ਼ ₹199</span> ਵਿੱਚ।',
+    heroL2: '<span class="gold-shimmer">ਮੁਫ਼ਤ</span>।',
     heroL3: '<span class="accent">AI ਬਾਬਾ</span> ਨੂੰ ਪੁੱਛੋ',
     heroLead: "WhatsApp 'ਤੇ ਜਨਮ ਦੀ ਤਾਰੀਖ਼, ਸਮਾਂ ਤੇ ਥਾਂ ਭੇਜੋ — <b>KundliBaba AI</b> ਤੁਹਾਡੀ ਅਸਲੀ ਵੈਦਿਕ ਕੁੰਡਲੀ ਬਣਾਉਂਦਾ ਹੈ ਤੇ ਸਾਫ਼ ਭਾਸ਼ਾ ਵਿੱਚ ਸਮਝਾਉਂਦਾ ਹੈ, <b>ਬਿਲਕੁਲ ਮੁਫ਼ਤ</b>। ਹੋਰ ਡੂੰਘਾਈ ਚਾਹੀਦੀ ਹੈ? <b>₹199 ਵਿੱਚ 5 ਨਿੱਜੀ ਸਵਾਲ</b> ਪੁੱਛੋ — ਕਰੀਅਰ, ਵਿਆਹ, ਪੈਸਾ, ਕੁਝ ਵੀ।",
     heroCta: "ਮੇਰੀ ਮੁਫ਼ਤ ਕੁੰਡਲੀ ਬਣਾਓ",
@@ -782,7 +782,7 @@ window.KB_I18N = (function () {
 
     heroEyebrow: "WhatsApp પર · 2 મિનિટ · કોઈ એપ નહીં",
     heroL1: "તમારી જન્મ કુંડળી,",
-    heroL2: '<span class="gold-shimmer">માત્ર ₹199</span>માં.',
+    heroL2: '<span class="gold-shimmer">મફત</span>.',
     heroL3: '<span class="accent">AI બાબાને</span> પૂછો',
     heroLead: "WhatsApp પર જન્મ તારીખ, સમય અને સ્થળ મોકલો — <b>KundliBaba AI</b> તમારી સાચી વૈદિક કુંડળી બનાવે છે અને સરળ ભાષામાં સમજાવે છે, <b>સંપૂર્ણ મફત</b>. વધુ ઊંડાણ જોઈએ? <b>₹199માં 5 વ્યક્તિગત પ્રશ્નો</b> પૂછો — કરિયર, લગ્ન, પૈસા, કંઈપણ.",
     heroCta: "મારી મફત કુંડળી બનાવો",
@@ -932,7 +932,7 @@ window.KB_I18N = (function () {
 
     heroEyebrow: "WhatsApp-এ · 2 মিনিট · কোনো অ্যাপ নয়",
     heroL1: "আপনার জন্ম কুণ্ডলী,",
-    heroL2: '<span class="gold-shimmer">মাত্র ₹199</span>-এ।',
+    heroL2: '<span class="gold-shimmer">ফ্রি</span>।',
     heroL3: '<span class="accent">AI বাবাকে</span> জিজ্ঞেস করুন',
     heroLead: "WhatsApp-এ জন্ম তারিখ, সময় ও স্থান পাঠান — <b>KundliBaba AI</b> আপনার আসল বৈদিক কুণ্ডলী বানায় এবং সহজ ভাষায় বুঝিয়ে দেয়, <b>একদম ফ্রি</b>। আরও গভীরে যেতে চান? <b>₹199-এ 5টি ব্যক্তিগত প্রশ্ন</b> জিজ্ঞেস করুন — কেরিয়ার, বিয়ে, টাকা, যা খুশি।",
     heroCta: "আমার ফ্রি কুণ্ডলী বানান",
@@ -1082,7 +1082,7 @@ window.KB_I18N = (function () {
 
     heroEyebrow: "WhatsApp-இல் · 2 நிமிடம் · ஆப் தேவையில்லை",
     heroL1: "உங்கள் ஜாதகம்,",
-    heroL2: '<span class="gold-shimmer">வெறும் ₹199</span>.',
+    heroL2: '<span class="gold-shimmer">இலவசம்</span>.',
     heroL3: '<span class="accent">AI பாபாவிடம்</span> கேளுங்கள்',
     heroLead: "WhatsApp-இல் பிறந்த தேதி, நேரம், இடத்தை அனுப்புங்கள் — <b>KundliBaba AI</b> உங்கள் உண்மையான வேத ஜாதகத்தை உருவாக்கி, தெளிவாக விளக்குகிறது, <b>முற்றிலும் இலவசம்</b>. இன்னும் ஆழமாகச் செல்ல வேண்டுமா? <b>₹199-க்கு 5 தனிப்பட்ட கேள்விகள்</b> கேளுங்கள் — வேலை, திருமணம், பணம், எதுவும்.",
     heroCta: "என் இலவச ஜாதகம்",
@@ -1232,7 +1232,7 @@ window.KB_I18N = (function () {
 
     heroEyebrow: "WhatsApp-లో · 2 నిమిషాలు · యాప్ అవసరం లేదు",
     heroL1: "మీ జన్మ కుండలి,",
-    heroL2: '<span class="gold-shimmer">కేవలం ₹199</span>.',
+    heroL2: '<span class="gold-shimmer">ఉచితం</span>.',
     heroL3: '<span class="accent">AI బాబాను</span> అడగండి',
     heroLead: "WhatsApp-లో పుట్టిన తేదీ, సమయం, స్థలం పంపండి — <b>KundliBaba AI</b> మీ అసలైన వైదిక కుండలిని తయారు చేసి, స్పష్టంగా వివరిస్తుంది, <b>పూర్తిగా ఉచితం</b>. మరింత లోతుగా వెళ్లాలా? <b>₹199కి 5 వ్యక్తిగత ప్రశ్నలు</b> అడగండి — కెరీర్, పెళ్లి, డబ్బు, ఏదైనా.",
     heroCta: "నా ఉచిత కుండలి",
